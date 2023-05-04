@@ -1,0 +1,15 @@
+﻿<Window x:Name="main" x:Class="WpfApp3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label Content="Somewhat Booked!" HorizontalAlignment="Center" Margin="0,45,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="40"/>
+        <TextBox x:Name="tbox" HorizontalAlignment="Center" Margin="0,152,0,0" TextWrapping="Wrap" Text=" Enter Password Here" VerticalAlignment="Top" Width="244" FontSize="20" TextChanged="TextBox_TextChanged"/>
+        <Button x:Name="btn" Content="Log In" HorizontalAlignment="Left" Margin="341,217,0,0" VerticalAlignment="Top" FontSize="20" Click="Button_Click" IsEnabled="False"/>
+
+    </Grid>
+</Window>
