@@ -20,7 +20,8 @@ namespace WpfApp3
     /// </summary>
     public partial class MainWindow : Window
     {
-        string password = "password";
+        bool id = false;
+        bool pass = false;
         public MainWindow()
         {
             InitializeComponent();
@@ -28,18 +29,28 @@ namespace WpfApp3
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
-            if (tbox.Text == password)
+            if (Password.Text == )
             {
-                btn.IsEnabled = true;
+                pass = true;
             }
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            tbox.IsEnabled = false;
-            search.Show();
+            if (id && pass == true)
+            {
+                this.Close();
+                Window1 search = new Window1();
+                search.Show();
+            }
         }
 
-
+        private void Username_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if (Username.Text == )
+            {
+                id = true;
+            }
+        }
     }
 }
